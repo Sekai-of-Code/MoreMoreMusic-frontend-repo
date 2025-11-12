@@ -31,7 +31,3 @@ dist
 
 # env files
 .env
-
-# Docker 
-docker-compose.yml
-Dockerfile
