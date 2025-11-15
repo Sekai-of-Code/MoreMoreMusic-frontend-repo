@@ -36,6 +36,18 @@ const buttonVariants = cva(
   }
 )
 
+/**
+ * Renders a themed button element that can optionally render as a Radix Slot.
+ *
+ * Renders either a native `button` or a `Slot` (when `asChild` is true) with classes from `buttonVariants`,
+ * merges `className`, and forwards all other props to the rendered element.
+ *
+ * @param className - Additional classes to merge with the variant-generated classes
+ * @param variant - Visual variant to apply (e.g., "default", "destructive", "outline", "secondary", "ghost", "link")
+ * @param size - Size variant to apply (e.g., "default", "sm", "lg", "icon", "icon-sm", "icon-lg")
+ * @param asChild - If true, render a Radix `Slot` instead of a native `button`
+ * @returns A React element: a styled `button` or `Slot` with computed classes and forwarded props
+ */
 function Button({
   className,
   variant,
